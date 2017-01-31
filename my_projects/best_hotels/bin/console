@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+#require "bundler/setup"
+require_relative '../config/environment'
+require 'irb'
+
+def reload!
+  load './config/environment.rb'
+end
+
+puts " WELCOME TO THE BEST HOTELS IN IRAQ ....."
+
+ IRB.start
