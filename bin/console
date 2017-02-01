@@ -8,6 +8,6 @@ def reload!
   load './config/environment.rb'
 end
 
-puts " WELCOME TO THE BEST HOTELS IN IRAQ ....."
+
 
  IRB.start

@@ -1,11 +1,12 @@
 #!/usr/bin/env ruby
 #require "./lib/hotels_in_iraq"
 #HotelsInIraq::CLI.new.call
-
-class Hotel
+#require_relative './Scraper.rb'
+class Hotel < Scraper
+  include
   attr_accessor :hotels, :title, :location, :rate, :details
   @@all_list =[]
-  def initialize(title,location,rate,details)
+  def self.new_hotels
     @title=title
     @location=location
     @rate=rate
@@ -16,7 +17,9 @@ class Hotel
   def self.all_list
     @@all_list
   end
-  def hotel_list
 
+  def  list_scrape
+    hotel_name
+    puts "____________________________________________________________________________"
   end
 end
